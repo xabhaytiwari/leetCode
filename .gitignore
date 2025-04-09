@@ -1,4 +1,4 @@
 # ignore ALL .exe files
 *.exe
 
-.vscode/
+vscode/
