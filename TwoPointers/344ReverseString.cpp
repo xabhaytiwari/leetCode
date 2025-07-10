@@ -19,7 +19,7 @@ int main() {
     ReverseString solution;
     solution.reverseString(s);
     for(const char ch : s) {
-        cout<< ch;
+        cout << ch;
     }
     return 0;
 }
