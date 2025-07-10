@@ -16,7 +16,7 @@ class RemoveDupliactes {
 };
 
 int main() {
-    vector<int> nums = {1, 1, 2};
+    vector<int> nums = {1, 1, 2, 3};
     RemoveDupliactes solution;
     cout << solution.removeDuplicates(nums);
     return 0;
