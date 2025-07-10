@@ -20,7 +20,7 @@ int main() {
     vector<int> numbers = {2, 7, 11, 15};
     TwoSum solution;
     for(int output : solution.twoSum(numbers, 9)) {
-        cout << output << " ";
+        cout << output << "  ";
     }
     return 0;
 }
