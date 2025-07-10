@@ -6,19 +6,18 @@ using namespace std;
 class MinimumSubarray {
     public:
         int minSubArrayLen(int target, vector<int> &nums) {
-            sort(nums.begin(), nums.end());
-            int right = nums.size() - 1, left = nums.size() - 2;
-            int minLen = INT_MAX, sum;
-            while(left < right) {
-                sum += nums[left] + nums[right];
-                if(sum >= target) {
-                    minLen = min(minLen, right - left + 1);
-                    break;
-                } else {
-                    left--;
-                }
+        int left = 0, sum = 0, minLen = INT_MAX;
+
+        for (int right = 0; right < nums.size(); ++right) {
+            sum += nums[right];
+
+            while (sum >= target) {
+                minLen = min(minLen, right - left + 1);
+                sum -= nums[left++];
             }
-            return minLen;
+        }
+
+        return minLen == INT_MAX ? 0 : minLen;
         }
 };
 
