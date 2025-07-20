@@ -3,7 +3,8 @@
 using namespace std;
 
 class DeleteDuplicateFolders {
-    
+    public:
+        
 };
 
 int main() {
