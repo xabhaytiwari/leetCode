@@ -81,6 +81,8 @@ int main () {
     object.addEdge(4, 7);
 
     object.printParents(1, 0);
+    object.printChildren();
+    object.printLeafNodes();
 
     return 0;
 }
